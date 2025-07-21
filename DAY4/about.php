@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Quiz club</title>
+    <link rel="icon" href="icon.jpg">
+    <meta charset="utf-8">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            
+            color: rgb(12, 12, 12);
+            background-image: url(555.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            
+        }
+        nav {
+            background-color: #ffffff;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color:  gray;
+            color: black;
+        }
+        h3 {
+            width: 800px;
+            text-align: center;
+        }
+        h2{
+            color: rgb(244, 240, 24);
+        }
+        h1{
+            color: white;
+            
+            font-family: Algerian;
+           
+        
+        }
+        .work{
+            border-style: dotted;
+        }
+        form{
+            float: right;
+            display: block;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        p{
+            font-family: Algerian;
+            color: yellow;
+            font-size: medium;
+        }
+        form :hover {
+            background-color:  gray;
+            color: black;
+        }
+        .virus{
+            border-style: dashed;
+        }
+        .kira{
+            float: right;
+            border-style: dashed;
+            font-size: larger;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .kiran{
+            float: left;
+            border-style: dashed;
+            font-size: larger;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .killer{
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid"></div>
+    <center>
+        <h1 class="work">QUIZ CLUB</h1>
+        <p><u>Welcome to the  Quiz Club! Test your skills by answering simple questions.</u></p>
+
+        
+    </center>
+    <nav>
+        <a class="virus" href="index.php">Home</a>
+        <a class="virus" href="sign.php">sign</a>
+        <a class="virus" href="login.php">login</a>
+        <a class="virus" href="contact.php">Contact</a>
+        <a class="virus" href="about.php">About Us</a>
+        <form action="/search" method="get">
+            <input type="text" id="search" name="search" placeholder="Enter search term...">
+            <button type="submit">Search</button>
+        </form>
+    </nav>
+    <hr>
+    <center>
+    <h1 >About Quiz Club</h1>
+    
+    <h3>Welcome to quiz club, your ultimate destination for stimulating quizzes and endless fun!</h3>
+    <br>
+    <h3>At quiz club we're passionate about quizzing. Our mission is simple: to provide you with an entertaining and enriching experience that challenges your mind and keeps you coming back for more. Whether you're a trivia novice or a seasoned quizmaster, there's something here for everyone.</h3>
+    <br>
+    <h3>Behind the scenes, our dedicated team of developers, designers, and content creators work tirelessly to craft engaging quizzes on a wide range of topics. From history buffs to pop culture aficionados, we've got quizzes that cater to every interest and knowledge level.</h3>
+    <br>
+    <h3>What sets us apart is our commitment to quality and innovation. We strive to deliver quizzes that are not only entertaining but also educational, offering tidbits of fascinating information along the way. With each quiz, you'll not only test your knowledge but also learn something new!</h3>
+    <br>
+    <h3>But quiz club is more than just a platform for quizzes. It's a vibrant community where players from all walks of life come together to share their love for trivia and gaming. Whether you're competing against friends, challenging yourself to beat your high score, or simply enjoying a leisurely quiz session, you'll find a welcoming and inclusive environment here at quiz club.</h3>
+    <br>
+    <h3>So why wait? Dive into the world of quiz club today and embark on an exciting journey of discovery and entertainment. Who knows? You might just become the next quiz champion!</h3>
+    <br>
+    <h2>Join us and let the games begin!</h2>
+    </center>
+</div>
+<ul class="killer">
+    <li class="kiran"><a class="page-link" href="contact.php">Previous</a></li>
+    <li class="kira"><a class="page-link" href="index.php">Next</a></li>
+  </ul>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Quiz club</title>
+    <link rel="icon" href="icon.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body{
+            
+            color: rgb(6, 6, 6);
+            background-image: url(555.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            
+        }
+        nav {
+            background-color: #ffffff;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color:  gray;
+            color: black;
+        }
+        h1{
+            color: whitesmoke;
+            
+            font-family: Algerian;
+           
+        
+        }
+        .work{
+            border-style: dotted;
+        }
+        form{
+            float: right;
+            display: block;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        p{
+            font-family: Algerian;
+            color: yellow;
+            font-size: medium;
+        }
+        h3{
+            
+            color: whitesmoke;
+            text-align: left;
+        }
+        form :hover {
+            background-color:  gray;
+            color: black;
+        }
+        .virus{
+            border-style: dashed;
+        }
+        .kira{
+            float: right;
+            border-style: dashed;
+            font-size: larger;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .kiran{
+            float: left;
+            border-style: dashed;
+            font-size: larger;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .killer{
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+    <center>
+        <h1 class="work">QUIZ CLUB</h1>
+        <p><u>Welcome to the  Quiz Club! Test your skills by answering simple questions.</u></p>
+
+        
+    </center>
+    <nav>
+        <a class="virus" href="index.php">Home</a>
+        <a class="virus" href="sign.php">sign</a>
+        <a class="virus" href="login.php">login</a>
+        <a class="virus" href="contact.php">Contact</a>
+        <a class="virus" href="about.php">About Us</a>
+        <form action="/search" method="get">
+            <input type="text" id="search" name="search" placeholder="Enter search term...">
+            <button type="submit">Search</button>
+        </form>
+    </nav>
+    <hr>
+    <CENTer><h1>CONTACT DETIALS</h1></CENTer>
+</center>
+<h1>CONTACT DETAILS</h1>
+</center>
+<center>
+<h4>IF YOU WANT TO LEARN MORE ABOUT THE QUIZ CLUB OR IF YOU WANT TO JOIN THE QUIZ CLUB, PLEASE CONTACT US.</h4>
+</center>
+<h3><u>QUIZ CLUB DETAILS :</u></h3>
+<center>
+<h4>KONGU ENGINEERING COLLEGE, PERUNDURAI, ERODE (638051).</h4>
+<h4>TELEPHONE NUMBER: 044-332456785</h4>
+<h4>EMAIL ID: quizclub@gmail.com</h4>
+<h4>INSTAGRAM ID: QUIZ_FANTASY_01</h4>
+</center>
+s
+</div>
+<ul class="killer">
+    <li class="kiran"><a class="page-link" href="login.php">Previous</a></li>
+    <li class="kira"><a class="page-link" href="about.php">Next</a></li>
+  </ul>
+</body>
+</html>

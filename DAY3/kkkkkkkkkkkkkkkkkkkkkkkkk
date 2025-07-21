@@ -1,0 +1,86 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+struct List {
+    int data;
+    struct List *next;
+};
+
+typedef struct List* LIST;
+
+LIST newnode, tptr, head = NULL, tail, shadow;
+LIST head1, tail1;
+LIST copySLL;
+
+void insert(int data) {
+    newnode = (LIST) malloc(sizeof(struct List));
+    newnode->data = data;
+    newnode->next = NULL;
+    if (head == NULL) {
+        printf("\nCreating a new List");
+        tail = head = newnode;
+    } else {  /inserting the nodes at the end/
+        for (tptr = head; tptr; shadow = tptr, tptr = tptr->next);
+        shadow->next = newnode;
+        newnode->next = tptr;
+    }
+}
+
+void display(LIST head) {
+    for (tptr = head; tptr; tptr = tptr->next)
+        printf("\t%d", tptr->data);
+    printf("\n");
+}
+
+struct List* copying_list(LIST head) {
+    newnode = (LIST) malloc(sizeof(struct List));
+    if (head == NULL)
+        return NULL;
+    else {
+        newnode->data = head->data;
+        newnode->next = copying_list(head->next);
+    }
+    return newnode;
+}
+
+void deleteList(LIST* head_ref) {
+    LIST current = *head_ref;
+    LIST next;
+    
+    while (current != NULL) {
+        next = current->next;
+        free(current);
+        current = next;
+    }
+    
+    *head_ref = NULL;
+}
+
+int main() {
+    int input[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    int index = 0, noe;
+    noe = sizeof(input) / sizeof(int);
+    for (index = 0; index < noe; index++) {
+        insert(input[index]);
+    }
+    
+    printf("\nOriginal List:");
+    display(head);
+    
+    printf("\nDuplicate List creation");
+    copySLL = copying_list(head);
+    printf("\nCopied List:");
+    display(copySLL);
+    
+    printf("\nDeleting the original list");
+    deleteList(&head);
+    printf("\nOriginal List after deletion:");
+    display(head);
+    
+    printf("\nDeleting the copied list");
+    deleteList(&copySLL);
+    printf("\nCopied List after deletion:");
+    display(copySLL);
+    
+    return 0;
+}

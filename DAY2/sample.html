@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Club</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* styles.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('555.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #ffffff;
+    padding: 20px 0;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    background-color: gray;
+    color: black;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+    color: white;
+}
+
+/* Login Section Styles */
+.login-table {
+    width: 100%;
+}
+
+.login-table td {
+    padding: 5px;
+}
+
+.login-table input[type="text"],
+.login-table input[type="number"],
+.login-table input[type="password"],
+.login-table select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.login-table input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.login-table input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    color: pink;
+    margin: 0;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Quiz Club</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Quizzes</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="intro">
+            <h2>Welcome to Quiz Club!</h2>
+            <p>Test your skills by answering simple questions.</p>
+        </section>
+        <section class="quiz-categories">
+            <h2>Quiz Categories</h2>
+            <ul>
+                <li>Mathematics</li>
+                <li>History</li>
+                <li>Science</li>
+                <li>Current Affairs</li>
+            </ul>
+        </section>
+        <section class="rules">
+            <h2>Rules for Quiz Club</h2>
+            <ul>
+                <li>Each subject contains 10 questions.</li>
+                <li>Each question pertains to one subject.</li>
+                <li>You must answer one question at a time.</li>
+            </ul>
+        </section>
+        <section class="mark-distribution">
+            <h2>Mark Distribution</h2>
+            <table>
+                <tr>
+                    <th>Subject</th>
+                    <th>No. of Questions</th>
+                    <th>Marks</th>
+                </tr>
+                <tr>
+                    <td>Mathematics</td>
+                    <td>10</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>History</td>
+                    <td>10</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Science</td>
+                    <td>10</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Current Affairs</td>
+                    <td>10</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Total</td>
+                    <td>80</td>
+                </tr>
+            </table>
+        </section>
+        <section class="login">
+            <h2 class="headline">Login to Continue</h2>
+            <form>
+                <table class="login-table">
+                    <tr>
+                        <td>Name:</td>
+                        <td><input type="text" placeholder="Enter your name" required></td>
+                    </tr>
+                    <tr>
+                        <td>Age:</td>
+                        <td><input type="number" placeholder="Enter your age" required></td>
+                    </tr>
+                    <tr>
+                        <td>Gender:</td>
+                        <td>
+                            <input type="radio" id="male" name="gender" value="male" required>
+                            <label for="male">Male</label>
+                            <input type="radio" id="female" name="gender" value="female" required>
+                            <label for="female">Female</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td><input type="email" placeholder="Enter your email" required></td>
+                    </tr>
+                    <tr>
+                        <td>Password:</td>
+                        <td><input type="password" placeholder="Enter your password" required></td>
+                    </tr>
+                    <tr>
+                        <td>Department:</td>
+                        <td>
+                            <select>
+                                <option>CSD</option>
+                                <option>CSE</option>
+                                <option>Civil</option>
+                                <option>Mech</option>
+                                <option>EEE</option>
+                                <option>ECE</option>
+                                <option>IT</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="submit" value="Login"></td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Contact: quizclub@gmail.com | Phone: 044-332456785</p>
+    </footer>
+</body>
+</html>
